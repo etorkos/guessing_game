@@ -1,0 +1,56 @@
+body {
+padding: 0 0 0 0;
+background: #bbbbbb url(ice.jpg) top left no-repeat;
+background-size: 100%;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+h2 {
+	font-size: 30px;
+	margin-top: 15px;
+}
+.header {
+	background: #000000 url(question-banner.jpg) top right no-repeat;
+	padding-bottom: 15px;
+	color: #bbbbbb;
+	text-indent: 50px;
+	padding-top: 15px;
+	border-radius: 15px;
+}
+input {
+width: 150px;
+margin: 15px 10px 10px 15px;
+text-align: left;
+font-size: 20px;
+}
+button {
+	margin: 15px 15px 15px 15px ;
+	padding: 5px 5px 5px 5px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+.reset {
+	margin-left: 75px;
+}
+.main {
+	width: 370px;
+	margin: 170px auto 50px auto;
+	background: #252525;
+	border-radius: 5px;
+}
+.feedback {
+	width: 350px;
+	height: 250px;
+	float: right;
+	background: #252525;
+	color: #bbbbbb;
+	position: absolute;
+	top: 320px;
+	right: 15px;
+	border-radius: 15px;
+
+}
