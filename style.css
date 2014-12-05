@@ -52,5 +52,7 @@ button {
 	top: 320px;
 	right: 15px;
 	border-radius: 15px;
-
+}
+.deactivated {
+	background-color: gray;
 }
