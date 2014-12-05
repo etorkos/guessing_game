@@ -29,12 +29,21 @@ function Game () { //master function
 	}
 
 	this.reccommend = function (guess) {
+		var progress = "";
+		var rec = ", guess higher";
+		if(this.guesses.length >1 && this.guessCount > 1){
+			if(Math.abs(guess - this.goal) < Math.abs(this.guesses[this.guesses.length - 2] - this.goal)) {
+				progress = ", and getting warmer";
+			}
+			else {
+				progress = ", and getting colder";
+			}
+		}
 		if(guess > this.goal) {
-			return "You are "+this.state+", guess lower ";
+			rec = ", guess lower ";
 		}
-		else {
-			return "You are "+this.state+", guess higher" ;
-		}
+
+			return "You are "+this.state+progress+rec;
 	}
 
 	this.guess = function(guess) {
@@ -44,8 +53,8 @@ function Game () { //master function
 
 		 if (guess === this.goal) {
 			myGame.active = false;
-			this.diff(guess);
 			this.guesses.push(guess);
+			this.diff(guess);
 		}
 		else {
 			this.guessCount++;
